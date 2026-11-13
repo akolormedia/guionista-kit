@@ -4,6 +4,28 @@ Base project template for screenwriting (feature film, series, micro
 drama) with Bradbit. It contains the shared skills, agents and commands,
 plus the folder structure for the story bible and the script.
 
+## When to use it
+Use this kit for a feature film, a series, an episode or a micro drama:
+any project where the deliverable is a script in Fountain format and the
+work is organized around a story bible, structure and scenes.
+
+## Workflow
+1. `/idea` — premise, logline and theme.
+2. `/character` — character sheets and voices.
+3. `/structure` — choose a structure method and write the beats.
+4. `/outline` — turn the beats into a scene outline.
+5. `/scene` — draft scenes in `script/`.
+6. `/review` — script-editor notes.
+7. `/voice` — test dialogue in a character's voice.
+
+## Creating a project
+From the app: **New project** → **Screenwriting (guionista-kit)**.
+From the CLI:
+```bash
+bradbit init my-project --kit guionista-kit
+```
+`guionista-kit` is the default when `--kit` is omitted.
+
 ## How to use it
 
 1. Copy this folder as the repository for your new project:
@@ -36,6 +58,13 @@ plus the folder structure for the story bible and the script.
   `/estructura`, `/escena`, `/revisar`, `/voz`.
 - **Git commands** — `/save-version` and `/history` are provided by
   Bradbit as general commands, not by this kit.
+
+## Language and aliases
+
+Kit instructions are English; the agent replies and writes the script in
+the language configured in Bradbit. Canonical command ids are English,
+with Spanish aliases when the app runs in Spanish (`/escena`, `/revisar`,
+`/voz`, ...). The editor sends the canonical id to the runtime.
 
 ## Versioning workflow
 
